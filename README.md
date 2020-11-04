@@ -1,0 +1,1 @@
+### BookLand is a web-based book Management application. It will be developed using MERN stack technology. Users can add new books to the application, save books for later, Edit book details and can delete books from the application.
