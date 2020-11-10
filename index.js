@@ -6,9 +6,12 @@ const morgan = require("morgan");
 const PORT = process.env.PORT || 3200;
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
+
+const uri = process.env.DB_PATH;
 
 // mongoDB connect
-mongoose.connect("mongodb://localhost:auth/bookland", {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
